@@ -65,6 +65,7 @@ header {
     float: right;
     padding: 0 10px;
     margin-right: 10px;
+    cursor: pointer;
 }
 #faccinadonna {
     height: 50px;
@@ -72,6 +73,7 @@ header {
     border-radius: 20px;
     margin-left: 15px;
     margin-top: 10px;
+    cursor: pointer;
 }
 .picc {
     height: 54px;
@@ -136,13 +138,16 @@ header {
     margin-top: 5px;
 }
 #ricevi {
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 15px;
     padding: 15px;
 }
 #attiva {
     font-size: 15px;
     padding: 5px;
+    color: grey;
+    cursor: pointer;
+    text-decoration: underline;
 }
 #ilprimo {
     width: 80%;
@@ -153,6 +158,10 @@ header {
     height:84px;
     background-color: white;
     border-bottom: 1px solid #eaeaea;
+    cursor: pointer;
+}
+.dio:hover {
+    background-color:#e9ebeb;
 }
 
 /* parte destraaaaaaa--------------------- */
@@ -180,6 +189,7 @@ header {
     margin-left: 15px;
     margin-top: 10px;
     float: left;
+    cursor: pointer;
 }
 #ultimoaccesso {
     color:  darkgrey;
@@ -196,6 +206,7 @@ header {
     padding: 0 10px;
     margin-top: -21px;
     margin-right: 10px;
+    cursor: pointer;
 }
 /* nav bar sotto */
 .barrasotto {
@@ -214,6 +225,7 @@ header {
     color: #6b7376;
     font-size: 25px;
     padding: 0 10px;
+    cursor: pointer;
 }
 #smile {
     margin-left: 15px;
