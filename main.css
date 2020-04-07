@@ -15,7 +15,7 @@ header {
 #ilgrosso {
     background-color: #dbdbd2;
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
     z-index: 0;
 
 }
@@ -52,12 +52,15 @@ header {
      height: 80px;
      /* position: fixed; */
      align-items: center;
-     justify-content: space-around;
+     justify-content: space-between;
 }
 .navbartopdx {
      /* position: absolute; */
      background-color: #eaeaea;
      height: 80px;
+     align-items: center;
+     justify-content: space-between;
+     display: flex;
 }
 .immagine1 {
     width: 25px;
@@ -67,10 +70,13 @@ header {
 .segnetti i {
     color: darkgrey;
     font-size: 22px;
-    padding: 0 10px;
+    padding: 0 5px;
     cursor: pointer;
     float: right;
+    flex-wrap: wrap;
+
 }
+
 #faccinadonna {
     height: 50px;
     width: auto;
@@ -120,7 +126,7 @@ header {
 }
 .dio1 i {
     color:#8edafc;
-    font-size: 22px;
+    font-size: 25px;
     border-radius: 90px;
     background-color: white;
     padding: 15px;
@@ -129,10 +135,20 @@ header {
     margin-top: 10px;
 
 }
+.primaricerca{
+    border-right: 1px solid #eaeaea;
+}
+.primaricerca2{
+margin-left: 10px;
+width: 400px;
+}
 .dio2 {
     height:40px;
     background-color: white;
     border-bottom: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .dio2 i {
     color: darkgrey;
@@ -191,13 +207,17 @@ header {
     width: auto;
     border-radius: 20px;
     margin-left: 15px;
-    margin-top: 10px;
+    margin-top: -5px;
     float: left;
     cursor: pointer;
     padding: 0 10px;
 }
 #ultimoaccesso {
     color:  darkgrey;
+}
+.ola {
+    width: 300px;
+    margin-top: 10px;
 }
 
 /* #fabio {
@@ -209,7 +229,7 @@ header {
     font-size: 22px;
     float: right;
     padding: 0 10px;
-    margin-top: -21px;
+    margin-top: 0px;
     margin-right: 10px;
     cursor: pointer;
 }
@@ -219,9 +239,18 @@ header {
     height: 90px;
     background-color:#eaeaea;
     float: right;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.finestra {
+    width: 70%;
+}
+.smilesx, .micdx {
+    width: 15%;
 }
 #perscrivere {
-    width: 80%;
+    width:90%;
     height: 70px;
     margin: 15px;
     border-radius: 6px;
@@ -238,3 +267,40 @@ header {
 #mic {
     margin-left: 10px;
 }
+
+/* mediaquery */
+
+
+/* @media screen and (max-width: 1199px) {
+
+} */
+
+
+@media screen and (min-width:992px) and (max-width: 1200px)  {
+#ilgrosso {
+    width: 100vw;
+    height:100vh;
+}
+#overflowsx {
+
+  width: 100%;
+  height: 580px;
+
+}
+#overflowdx {
+
+  width: 100%;
+  height: 610px;
+}
+#ricevi {
+    font-size: 12px;
+}
+#attiva {
+    font-size: 12px;
+}
+
+}
+
+/* @media screen and (min-width:502px) and (max-width: 950px)  {
+
+} */
