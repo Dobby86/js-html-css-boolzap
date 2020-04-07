@@ -45,7 +45,7 @@ header {
 }
 /* facciamo parte sinistra */
 .navbartopsx {
-     border-right: 1px solid black;
+     border-right: 1px solid #eaeaea;
      display: flex;
      width:30%;
      height: 80px;
@@ -72,6 +72,23 @@ header {
     border-radius: 20px;
     margin-left: 15px;
     margin-top: 10px;
+}
+.picc {
+    height: 54px;
+    width: auto;
+    border-radius: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.nomi {
+    margin-top: -50px;
+    margin-left: 80px;
+    color: black;
+    font-size: 20px;
+}
+#frase {
+    margin-left: 80px;
+    color: grey;
 }
 #disinistra {
     width:24.5%;
@@ -134,8 +151,8 @@ header {
 }
 .dio {
     height:84px;
-    background-color: blue;
-    border-bottom: 1px solid grey;
+    background-color: white;
+    border-bottom: 1px solid #eaeaea;
 }
 
 /* parte destraaaaaaa--------------------- */
