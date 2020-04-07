@@ -3,30 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
 header {
     background-color: #009688;
     width: 100vw;
     height: 18vh;
-    z-index: 0;
+    z-index: 1;
+
 }
 #ilgrosso {
     background-color: #dbdbd2;
     width: 100vw;
     height: 100vh;
     z-index: 0;
+
 }
 /* tutto in zindex  */
 .colonnasinistra-flex {
     width: 30%;
-    height:100%;
+    /* height:80vh; */
     background-color: grey;
     float: left;
 
 }
 .colonnadestra-flex {
     width: 70%;
-    height: 100%;
-    background-image: url(https://i.pinimg.com/originals/85/70/f6/8570f6339d3189c96e340d47a581d3b8.jpg);
+    /* height: 100%; */
+    background-image: url(img/Sfondo.jpg);
     float: right;
 
 }
@@ -39,13 +43,16 @@ header {
     margin-left: 10vw;
     margin-top: -15vh;
 }
-/* facciamo nav bar */
+/* facciamo parte sinistra */
 .navbartopsx {
      border-right: 1px solid black;
      display: flex;
      width:30%;
      height: 80px;
-
+     position: fixed;
+}
+.navbartopdx {
+     position: fixed;
 }
 .immagine1 {
     width: 25px;
@@ -57,7 +64,7 @@ header {
     font-size: 22px;
     float: right;
     padding: 0 10px;
-    : 20px;
+    margin-right: 10px;
 }
 #faccinadonna {
     height: 50px;
@@ -67,19 +74,87 @@ header {
     margin-top: 10px;
 }
 #disinistra {
-    width:24%;
+    width:24.5%;
     height: 80px;
     background-color: #eaeaea;
     position: fixed;
 }
+#overflowsx {
+  color: white;
+  padding: 1px;
+  width: 100%;
+  height: 690px;
+  overflow: scroll;
+  border: 1px solid #ccc;
 
-/* parte destraaaaaaa */
+}
+
+.dio1 {
+    height:80px;
+    background-color: #8edafc;
+    border-bottom: 1px solid grey;
+    margin-top: 80px;
+}
+.dio1 i {
+    color:#8edafc;
+    font-size: 22px;
+    border-radius: 90px;
+    background-color: white;
+    padding: 15px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+.dio2 {
+    height:40px;
+    background-color: white;
+    border-bottom: 1px solid grey;
+}
+.dio2 i {
+    color: darkgrey;
+    font-size: 22px;
+    margin-left: 15px;
+    padding: 0 10px;
+    margin-top: 5px;
+}
+#ricevi {
+    font-size: 15px;
+    margin-left: 15px;
+    padding: 15px;
+}
+#attiva {
+    font-size: 15px;
+    padding: 5px;
+}
+#ilprimo {
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+}
+.dio {
+    height:84px;
+    background-color: blue;
+    border-bottom: 1px solid grey;
+}
+
+/* parte destraaaaaaa--------------------- */
+#overflowdx {
+  /* background: #4CAF50; */
+  color: white;
+  padding: 1px;
+  width: 100%;
+  height: 800px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
 #didestra {
     width:56%;
     height: 80px;
     background-color:#eaeaea;
     position: fixed;
-    border-left: 1px solid black;
+    border-left: 1px solid #b1b1b1;
 }
 #faccinarayban {
     height: 50px;
@@ -92,11 +167,40 @@ header {
 #ultimoaccesso {
     color:  darkgrey;
 }
-.navbartopsx {
-     display: flex;
-     height: 80px;
-}
+
 #fabio {
     margin-top: 15px;
     margin-left: 10px;
+}
+.segnetti2 i {
+    color: darkgrey;
+    font-size: 22px;
+    float: right;
+    padding: 0 10px;
+    margin-top: -21px;
+    margin-right: 10px;
+}
+/* nav bar sotto */
+.barrasotto {
+    width:100%;
+    height: 90px;
+    background-color:#eaeaea;
+    float: right;
+}
+#perscrivere {
+    width: 80%;
+    height: 70px;
+    margin: 15px;
+    border-radius: 6px;
+}
+.barrasotto i {
+    color: #6b7376;
+    font-size: 25px;
+    padding: 0 10px;
+}
+#smile {
+    margin-left: 15px;
+}
+#mic {
+    margin-left: 50px;
 }
