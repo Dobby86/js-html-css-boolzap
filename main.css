@@ -16,11 +16,87 @@ header {
     z-index: 0;
 }
 /* tutto in zindex  */
-.prova {
+.colonnasinistra-flex {
+    width: 30%;
+    height:100%;
+    background-color: grey;
+    float: left;
+
+}
+.colonnadestra-flex {
+    width: 70%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/originals/85/70/f6/8570f6339d3189c96e340d47a581d3b8.jpg);
+    float: right;
+
+}
+
+.schermoprincipale {
     background-color:#d1d1e0 ;
     width: 80vw;
     height: 80vh;
     z-index: 999;
     margin-left: 10vw;
-    margin-top: -10vh;
+    margin-top: -15vh;
+}
+/* facciamo nav bar */
+.navbartopsx {
+     border-right: 1px solid black;
+     display: flex;
+     width:30%;
+     height: 80px;
+
+}
+.immagine1 {
+    width: 25px;
+    height: 25px;
+    display: flex;
+}
+.segnetti i {
+    color: darkgrey;
+    font-size: 22px;
+    float: right;
+    padding: 0 10px;
+    : 20px;
+}
+#faccinadonna {
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+#disinistra {
+    width:24%;
+    height: 80px;
+    background-color: #eaeaea;
+    position: fixed;
+}
+
+/* parte destraaaaaaa */
+#didestra {
+    width:56%;
+    height: 80px;
+    background-color:#eaeaea;
+    position: fixed;
+    border-left: 1px solid black;
+}
+#faccinarayban {
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-top: 10px;
+    float: left;
+}
+#ultimoaccesso {
+    color:  darkgrey;
+}
+.navbartopsx {
+     display: flex;
+     height: 80px;
+}
+#fabio {
+    margin-top: 15px;
+    margin-left: 10px;
 }
