@@ -7,15 +7,13 @@ console.log("ciao");
  // var scriviMessaggio = prompt("scrivere un messaggio");
  $(document).ready(function() {
 
-var digita = $("#perscrivere");
+var window = $(".scrollodx");
 
-var Generator = $("#genera");
+var digita = $(".finestra #perscrivere");
 
-var putDigita = digita.value;
+var invia = $(".invia #genera");
 
-var digitaPrimo = $("#txtgreen");
 
-    digitaPrimo.innerHTML = putDigita;
     $(".invia").hide();
     // click
     $("#perscrivere").click(function(){
@@ -25,12 +23,13 @@ var digitaPrimo = $("#txtgreen");
 
         });
 
+        invia.click(
+            function (){
+            var msg = digita.val();
+            window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
 
-
-
-
-
-
+            }
+        );
 
 
 
