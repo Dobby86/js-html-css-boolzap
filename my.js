@@ -62,40 +62,24 @@ $("#ilprimo").keypress(function() {
 
     $(".contatti").each(function() {
 
-        var nomeElemento = "fabio";
-        var nomeElemento1 = "michele";
-
+        var nomeElemento = $(this).find(".nomi").text();
         // var nomiLista =["Michele","fabio","Samuele","Alessandro b","Alessandro l","Claudia","Davide","Federico"];
         // console.log(nomiLista);
+        if (nomeElemento.includes(aggiungi)) {
 
-        if (aggiungi == nomeElemento) {
+            $(this).show();
+
             console.log("ok");
 
-            $(".contatti ").hide();
-            // $(".contatti .elemento 2").show();
+        } else  {
 
-        } else if (aggiungi == nomeElemento1) {
-            $(".contatti ").fadeOut();
-            $(".contatti elemento1").fadeIn();
-            // console.log("non e ok");
+            $(this).hide();
+        
             console.log("ok");
-    }else {
-        console.log("non e' stato trovato");
     }
 
 });
 });
-
-//
-function myFunction() {
-  var str = "Hello world, welcome to the universe.";
-  var n = str.includes("world");
- $("#") = n;
-}
-
-
-
-
 
 // non questo
 }
