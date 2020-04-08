@@ -16,12 +16,12 @@ var putDigita = digita.value;
 var digitaPrimo = $("#txtgreen");
 
     digitaPrimo.innerHTML = putDigita;
-    $("#genera").hide();
+    $(".invia").hide();
     // click
-    $("#generator").click(function(){
+    $("#perscrivere").click(function(){
 
-        $("#genera").show();
-        // $("#mic").hide()
+        $(".invia").show();
+        $(".micdx").hide()
 
         });
 

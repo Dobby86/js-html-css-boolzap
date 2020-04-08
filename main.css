@@ -301,7 +301,9 @@ width: 400px;
     float: left;
     width: 200px;
     height: 200px;
-
+}
+.invia {
+    margin-right: 50px;
 }
 .inviati {
     float: right;
