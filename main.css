@@ -174,14 +174,17 @@ width: 400px;
     height: 30px;
     border-radius: 5px;
 }
-.dio {
+.contatti {
     height:84px;
     background-color: white;
     border-bottom: 1px solid #eaeaea;
     cursor: pointer;
 }
-.dio:hover {
+.contatti:hover {
     background-color:#e9ebeb;
+}
+#vai {
+    cursor: pointer;
 }
 
 /* parte destraaaaaaa--------------------- */
