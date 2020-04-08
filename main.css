@@ -98,7 +98,7 @@ header {
     color: black;
     font-size: 20px;
 }
-#frase {
+.frase {
     margin-left: 80px;
     color: grey;
 }
@@ -113,7 +113,7 @@ header {
   padding: 1px;
   width: 100%;
   height: 690px;
-  overflow: scroll;
+  overflow-y: scroll;
   border: 1px solid #ccc;
 
 }
@@ -191,7 +191,7 @@ width: 400px;
   padding: 1px;
   width: 100%;
   height: 720px;
-  overflow: scroll;
+  overflow-y: scroll;
   border: 1px solid #ccc;
 }
 
@@ -270,12 +270,6 @@ width: 400px;
 
 /* mediaquery */
 
-
-/* @media screen and (max-width: 1199px) {
-
-} */
-
-
 @media screen and (min-width:992px) and (max-width: 1200px)  {
 #ilgrosso {
     width: 100vw;
@@ -301,6 +295,26 @@ width: 400px;
 
 }
 
-/* @media screen and (min-width:502px) and (max-width: 950px)  {
 
-} */
+/* input */
+.ricevuti {
+    float: left;
+    width: 200px;
+    height: 200px;
+
+}
+.inviati {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+ #txtgreen {
+     font-size: 24px;
+     color: blue;
+    padding: 0 10px;
+ }
+ #txtwhite {
+     font-size: 24px;
+     color: blue;
+     padding: 0 10px;
+ }
