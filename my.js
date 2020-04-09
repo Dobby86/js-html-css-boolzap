@@ -14,9 +14,6 @@ var digita = $(".finestra #perscrivere");
 var invia = $(".invia #genera");
 var perfect = "ok";
 
-
-
-
 //nascondiamo il tasto
     $(".invia").hide();
     // al click   mostriamo l'altro
@@ -27,15 +24,11 @@ var perfect = "ok";
 
         });
         //inviamo i messaggio nel div
-
         invia.click(
             function inviati(){
             var msg = digita.val();
             window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
-
-
             // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
-
             function rispostaFinale() {
                 window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
 
@@ -44,16 +37,12 @@ var perfect = "ok";
 
             }
     );
-
-
-
  //facciamo modo per scrivere il nome da cercare
 
-     var nomeRicercato = $(".primaricerca #ilprimo");
-     var trova = $(".primaricerca #vai");
-     var stampareSu = $(".scrollo");
-      var trovato = nomeRicercato.val();
-
+     // var nomeRicercato = $(".primaricerca #ilprimo");
+     // var trova = $(".primaricerca #vai");
+     // var stampareSu = $(".scrollo");
+     //  var trovato = nomeRicercato.val();
 
 // facciamo il ciclo
 $("#ilprimo").keypress(function() {
@@ -62,7 +51,7 @@ $("#ilprimo").keypress(function() {
 
     $(".contatti").each(function() {
 
-        var nomeElemento = $(this).find(".nomi").text();
+        var nomeElemento = $(this).find(".nomi").text().toLowerCase();
         // var nomiLista =["Michele","fabio","Samuele","Alessandro b","Alessandro l","Claudia","Davide","Federico"];
         // console.log(nomiLista);
         if (nomeElemento.includes(aggiungi)) {
@@ -74,12 +63,14 @@ $("#ilprimo").keypress(function() {
         } else  {
 
             $(this).hide();
-        
+
             console.log("ok");
     }
 
 });
 });
+// fine parte ricerca e attivazione input
+
 
 // non questo
 }

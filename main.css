@@ -118,13 +118,13 @@ header {
 
 }
 
-.dio1 {
+.dindon {
     height:80px;
     background-color: #8edafc;
     border-bottom: 1px solid #eaeaea;
     /* margin-top: 80px; */
 }
-.dio1 i {
+.dindon i {
     color:#8edafc;
     font-size: 25px;
     border-radius: 90px;
@@ -142,7 +142,7 @@ header {
 margin-left: 10px;
 width: 400px;
 }
-.dio2 {
+.rubrica {
     height:40px;
     background-color: white;
     border-bottom: 1px solid #eaeaea;
@@ -150,7 +150,7 @@ width: 400px;
     align-items: center;
     justify-content: flex-start;
 }
-.dio2 i {
+.rubrica i {
     color: darkgrey;
     font-size: 22px;
     margin-left: 15px;
@@ -218,7 +218,7 @@ width: 400px;
 #ultimoaccesso {
     color:  darkgrey;
 }
-.ola {
+.conversazionerayban {
     width: 300px;
     margin-top: 10px;
 }
