@@ -19,7 +19,7 @@ header {
     z-index: 0;
 
 }
-/* tutto in zindex  */
+
 .colonnasinistra-flex {
     width: 30%;
     /* height:80vh; */
@@ -298,7 +298,6 @@ width: 400px;
 
 }
 
-
 /* input */
 .ricevuti {
     float: left;
@@ -309,13 +308,17 @@ width: 400px;
     background-color: white;
     display: flex;
     flex-wrap: wrap;
+    /* PARTE DROPDWN */
+    position: relative;
+   display: inline-block;
+    cursor: pointer;
 
 }
 .invia {
     margin-right: 50px;
 }
 .inviati {
-    /* float: right; */
+
     width: 200px;
     height: 80px;
     border-radius:30px;
@@ -325,6 +328,11 @@ width: 400px;
     flex-wrap: wrap;
     margin-left: 70%;
     margin-top: 10%;
+    /* PARTE DROPDWN */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+
 
 
 }
@@ -339,8 +347,44 @@ width: 400px;
      color: blue;
     padding: 0 10px;
  }
+
  #txtwhite {
      font-size: 24px;
      color: blue;
      padding: 0 10px;
+
  }
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.ricevuti i {
+    opacity: 0;
+    padding: 1px 70px;
+    margin-left: 50px;
+}
+.inviati i {
+    opacity: 0;
+    padding: 1px 70px;
+    margin-left: 50px;
+}
+.inviati i:hover{
+    color:blue;
+    opacity: 1;
+    display: block;
+}
+.ricevuti i:hover{
+    color:blue;
+    opacity: 1;
+    display: block;
+}

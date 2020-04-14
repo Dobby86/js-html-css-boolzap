@@ -16,6 +16,9 @@ var perfect = "ok";
 
 //nascondiamo il tasto
     $(".invia").hide();
+
+    // test frop
+    $(".dropdown-content").hide();
     // al click   mostriamo l'altro
     $("#perscrivere").click(function(){
 
@@ -25,18 +28,44 @@ var perfect = "ok";
         });
         //inviamo i messaggio nel div
         invia.click(
-            function inviati(){
+            function inviati() {
             var msg = digita.val();
             window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
             // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
             function rispostaFinale() {
                 window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
 
+
             }
             setTimeout(rispostaFinale, 1000);
 
             }
+
     );
+    // test
+
+    $(".ricevuti i").click(
+        function drop(){
+            $(this).siblings(".dropdown-content").slideToggle();
+            //
+            // if  $(".inviati a").click() {
+            // $(".inviati")hide();
+            //
+            // }
+
+        }
+    )
+    $(".inviati i").click(
+        function drop(){
+            $(this).siblings(".dropdown-content").slideToggle();
+
+        }
+    )
+
+
+
+
+
  //facciamo modo per scrivere il nome da cercare
 
      // var nomeRicercato = $(".primaricerca #ilprimo");
