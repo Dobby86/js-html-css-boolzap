@@ -31,21 +31,29 @@ var perfect = "ok";
            function inviati() {
            var msg = digita.val();
            // handlebars space
-           var source = $("#msg-template").html();
+           var source = $("#msgIn-template").html();
            var template = Handlebars.compile(source);
            //
-           var context = {"msg": msg};
-           var html = template(context);
+           var contextIn = {"msgPh" : msg};
+           var html = template(contextIn);
             window.append(html);
 
            // window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
 
 
            // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
+
            function rispostaFinale() {
-               window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
+               // handlebars space
+               var perfect = "ok";
+               var source = $("#msgRi-template").html();
+               var template = Handlebars.compile(source);
+               //
+               var contextRi = {"okPh" : "ok perfect"};
+               var html = template(contextRi);
+                window.append(html);
 
-
+               // window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
            }
            setTimeout(rispostaFinale, 1000);
 
