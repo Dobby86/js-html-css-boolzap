@@ -12,7 +12,7 @@ var window = $(".scrollodx");
 var digita = $(".finestra #perscrivere");
 
 var invia = $(".invia #genera");
-var perfect = "ok";
+var perfect = "ok!!!";
 
 //nascondiamo il tasto
    $(".invia").hide();
@@ -45,11 +45,11 @@ var perfect = "ok";
 
            function rispostaFinale() {
                // handlebars space
-               var perfect = "ok";
+               // var perfect = "ok";
                var source = $("#msgRi-template").html();
                var template = Handlebars.compile(source);
                //
-               var contextRi = {"okPh" : "ok perfect"};
+               var contextRi = {"okPh" : perfect};
                var html = template(contextRi);
                 window.append(html);
 
