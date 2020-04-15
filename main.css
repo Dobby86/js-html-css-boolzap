@@ -3,14 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
 header {
     background-color: #009688;
     width: 100vw;
     height: 18vh;
     z-index: 1;
-
 }
 #ilgrosso {
     background-color: #dbdbd2;
@@ -19,22 +16,20 @@ header {
     z-index: 0;
 
 }
+/* tutto in zindex  */
 
 .colonnasinistra-flex {
     width: 30%;
     /* height:80vh; */
     background-color:#eaeaea;
     float: left;
-
 }
 .colonnadestra-flex {
     width: 70%;
     /* height: 100%; */
     background-image: url(img/Sfondo.jpg);
     float: right;
-
 }
-
 .schermoprincipale {
     background-color:#d1d1e0 ;
     width: 80vw;
@@ -74,9 +69,7 @@ header {
     cursor: pointer;
     float: right;
     flex-wrap: wrap;
-
 }
-
 #faccinadonna {
     height: 50px;
     width: auto;
@@ -115,9 +108,7 @@ header {
   height: 690px;
   overflow-y: scroll;
   border: 1px solid #ccc;
-
 }
-
 .dindon {
     height:80px;
     background-color: #8edafc;
@@ -133,7 +124,6 @@ header {
     float: left;
     margin-left: 10px;
     margin-top: 10px;
-
 }
 .primaricerca{
     border-right: 1px solid #eaeaea;
@@ -186,7 +176,6 @@ width: 400px;
 #vai {
     cursor: pointer;
 }
-
 /* parte destraaaaaaa--------------------- */
 #overflowdx {
   /* background: #4CAF50; */
@@ -197,7 +186,6 @@ width: 400px;
   overflow-y: scroll;
   border: 1px solid #ccc;
 }
-
 #didestra {
     width:56%;
     height: 80px;
@@ -222,7 +210,6 @@ width: 400px;
     width: 300px;
     margin-top: 10px;
 }
-
 /* #fabio {
     margin-top: 10px;
     margin-left: 10px;
@@ -270,22 +257,17 @@ width: 400px;
 #mic {
     margin-left: 10px;
 }
-
 /* mediaquery */
-
 @media screen and (min-width:992px) and (max-width: 1200px)  {
 #ilgrosso {
     width: 100vw;
     height:100vh;
 }
 #overflowsx {
-
   width: 100%;
   height: 580px;
-
 }
 #overflowdx {
-
   width: 100%;
   height: 610px;
 }
@@ -297,6 +279,7 @@ width: 400px;
 }
 
 }
+
 
 /* input */
 .ricevuti {
@@ -318,6 +301,7 @@ width: 400px;
     margin-right: 50px;
 }
 .inviati {
+    /* float: right; */
 
     width: 200px;
     height: 80px;
@@ -340,7 +324,6 @@ width: 400px;
     color:black;
     font-size: 12px;
     margin-left: 120px;
-
 }
  #txtgreen {
      font-size: 24px;

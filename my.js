@@ -15,89 +15,101 @@ var invia = $(".invia #genera");
 var perfect = "ok";
 
 //nascondiamo il tasto
-    $(".invia").hide();
+   $(".invia").hide();
 
-    // test frop
-    $(".dropdown-content").hide();
-    // al click   mostriamo l'altro
-    $("#perscrivere").click(function(){
+   // test frop
+   $(".dropdown-content").hide();
+   // al click   mostriamo l'altro
+   $("#perscrivere").click(function(){
 
-        $(".invia").show();
-        $(".micdx").hide()
+       $(".invia").show();
+       $(".micdx").hide()
 
-        });
-        //inviamo i messaggio nel div
-        invia.click(
-            function inviati() {
-            var msg = digita.val();
-            window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
-            // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
-            function rispostaFinale() {
-                window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
-
-
-            }
-            setTimeout(rispostaFinale, 1000);
-
-            }
-
-    );
-    // test
-
-    $(".ricevuti i").click(
-        function drop(){
-            $(this).siblings(".dropdown-content").slideToggle();
-            //
-            // if  $(".inviati a").click() {
-            // $(".inviati")hide();
-            //
-            // }
-
-        }
-    )
-    $(".inviati i").click(
-        function drop(){
-            $(this).siblings(".dropdown-content").slideToggle();
-
-        }
-    )
+       });
+       //inviamo i messaggio nel div
+       invia.click(
+           function inviati() {
+           var msg = digita.val();
+           window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
+           // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
+           function rispostaFinale() {
+               window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
 
 
+           }
+           setTimeout(rispostaFinale, 1000);
+
+           }
+
+   );
+   // test-----------------------------------------
+
+   $(".ricevuti i").click(
+       function drop(){
+           $(this).siblings(".dropdown-content").slideToggle();
+           //
+           // if  $(".inviati a").click() {
+           // $(".inviati")hide();
+           //
+           // }
+
+       }
+   )
+   $(".inviati i").click(
+       function drop(){
+           $(this).siblings(".dropdown-content").slideToggle();
+
+       }
+   )
 
 
+// fine testtttttttttttttttttt-------------------------
 
- //facciamo modo per scrivere il nome da cercare
+-
 
-     // var nomeRicercato = $(".primaricerca #ilprimo");
-     // var trova = $(".primaricerca #vai");
-     // var stampareSu = $(".scrollo");
-     //  var trovato = nomeRicercato.val();
+//facciamo modo per scrivere il nome da cercare
+
+    // var nomeRicercato = $(".primaricerca #ilprimo");
+    // var trova = $(".primaricerca #vai");
+    // var stampareSu = $(".scrollo");
+    //  var trovato = nomeRicercato.val();
 
 // facciamo il ciclo
 $("#ilprimo").keypress(function() {
 
-    var aggiungi = $("#ilprimo").val();
+   var aggiungi = $("#ilprimo").val();
 
-    $(".contatti").each(function() {
+   $(".contatti").each(function() {
 
-        var nomeElemento = $(this).find(".nomi").text().toLowerCase();
-        // var nomiLista =["Michele","fabio","Samuele","Alessandro b","Alessandro l","Claudia","Davide","Federico"];
-        // console.log(nomiLista);
-        if (nomeElemento.includes(aggiungi)) {
+       var nomeElemento = $(this).find(".nomi").text().toLowerCase();
+       // var nomiLista =["Michele","fabio","Samuele","Alessandro b","Alessandro l","Claudia","Davide","Federico"];
+       // console.log(nomiLista);
+       if (nomeElemento.includes(aggiungi)) {
 
-            $(this).show();
+           $(this).show();
 
-            console.log("ok");
+           console.log("ok");
 
-        } else  {
+       } else  {
 
-            $(this).hide();
+           $(this).hide();
 
-            console.log("ok");
-    }
+           console.log("ok");
+   }
 
 });
 });
+// mostra conversazione
+contatti.click(
+   function () {
+       contatti.removeClass("active");
+       $(this).addClass("active");
+       var dataAttr = $(this).data("conversazione");
+       window.removeClass("active");
+       $('.right-messages [data-conversazione =" ' + dataAttr + ' " ] ' ).addClass("active");
+
+   }
+)
 // fine parte ricerca e attivazione input
 
 
