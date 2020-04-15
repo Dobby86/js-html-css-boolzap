@@ -8,6 +8,7 @@
         <!-- awesome font -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
         <title>whatsup</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
        <main id="ilgrosso">
@@ -140,7 +141,16 @@
             </div>
         </section>
        </main>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                                            <!-- handlebars -->
+                   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+                   <script id="msg-template" type="text/x-handlebars-template">
+                             <div class="inviati">
+                                 <span id="txtgreen">{{msg}}</span>
+                                 <span class="orario"> 14:24</span>
+                             </div>
+                    </script>
+
         <script type="text/javascript" src="my.js">
         </script>
     </body>

@@ -30,7 +30,17 @@ var perfect = "ok";
        invia.click(
            function inviati() {
            var msg = digita.val();
-           window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
+           // handlebars space
+           var source = $("#msg-template").html();
+           var template = Handlebars.compile(source);
+           //
+           var context = {"msg": msg};
+           var html = template(context);
+            window.append(html);
+
+           // window.append('<div class="inviati"><span id="txtgreen"> ' + msg + '</span><span class="orario"> 14:24</span></div> ') ;
+
+
            // Risposta dall’interlocutore: ad ogni inserimento di un messaggio, l’utente riceverà un “ok” come risposta,
            function rispostaFinale() {
                window.append('<div class="ricevuti"><span id="txtwhite">' + perfect + '</span> <span class="orario"> 14:25</span></div>' )
@@ -100,16 +110,16 @@ $("#ilprimo").keypress(function() {
 });
 });
 // mostra conversazione
-contatti.click(
-   function () {
-       contatti.removeClass("active");
-       $(this).addClass("active");
-       var dataAttr = $(this).data("conversazione");
-       window.removeClass("active");
-       $('.right-messages [data-conversazione =" ' + dataAttr + ' " ] ' ).addClass("active");
-
-   }
-)
+// contatti.click(
+//    function () {
+//        contatti.removeClass("active");
+//        $(this).addClass("active");
+//        var dataAttr = $(this).data("conversazione");
+//        window.removeClass("active");
+//        $('.right-messages [data-conversazione =" ' + dataAttr + ' " ] ' ).addClass("active");
+//
+//    }
+// )
 // fine parte ricerca e attivazione input
 
 
