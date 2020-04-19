@@ -371,3 +371,31 @@ width: 400px;
     opacity: 1;
     display: block;
 }
+/* test */
+.right .right-messages {
+	display: none;
+	height: 100%;
+	width: 100%;
+	padding: 5% 10%;
+	background-image: url('https://4d3dn.csb.app/boolzapp/img/mine.jpg');
+	overflow-y: scroll;
+}
+.scrollodx  .right-messages.active {
+	display: block;
+}
+.scrollodx  .right-messages .message {
+	position: relative;
+	margin: 5px 0;
+	padding: 15px 15px 20px 15px;
+	min-width: 20%;
+	max-width: 60%;
+	background: #fff;
+	border-radius: 10px;
+	font-size: 15px;
+}
+.scrollodx  .right-messages .message::after {
+	content: '';
+	display: table;
+	overflow: hidden;
+	clear: both;
+}

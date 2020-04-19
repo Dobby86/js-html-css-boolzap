@@ -23,7 +23,7 @@ var perfect = "ok!!!";
    $("#perscrivere").click(function(){
 
        $(".invia").show();
-       $(".micdx").hide()
+       $(".micdx").hide();
 
        });
        //inviamo i messaggio nel div
@@ -60,7 +60,7 @@ var perfect = "ok!!!";
            }
 
    );
-   // test-----------------------------------------
+   // test dropdown-----------------------------------------
 
    $(".ricevuti i").click(
        function drop(){
@@ -72,18 +72,16 @@ var perfect = "ok!!!";
            // }
 
        }
-   )
+   );
    $(".inviati i").click(
        function drop(){
            $(this).siblings(".dropdown-content").slideToggle();
 
        }
-   )
+   );
 
 
 // fine testtttttttttttttttttt-------------------------
-
--
 
 //facciamo modo per scrivere il nome da cercare
 
@@ -118,16 +116,17 @@ $("#ilprimo").keypress(function() {
 });
 });
 // mostra conversazione
-// contatti.click(
-//    function () {
-//        contatti.removeClass("active");
-//        $(this).addClass("active");
-//        var dataAttr = $(this).data("conversazione");
-//        window.removeClass("active");
-//        $('.right-messages [data-conversazione =" ' + dataAttr + ' " ] ' ).addClass("active");
-//
-//    }
-// )
+ $(".contatti").click(
+   function () {
+       $(".contatti").removeClass("active");
+       $(this).addClass("active");
+       var dataAttr = $(this).data("conversazione");
+       $(".right-messages").removeClass("active");
+       $('.right-messages [data-conversazione=" ' + dataAttr + ' "]').addClass("active");
+
+
+   }
+);
 // fine parte ricerca e attivazione input
 
 
